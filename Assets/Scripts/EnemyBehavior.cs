@@ -13,8 +13,9 @@ public class EnemyBehavior : MonoBehaviour
 
     [SerializeField] private StringConstant playerTag;
 
-    [SerializeField]
-    private FloatReference _shootingRange = new FloatReference (1f);
+    [SerializeField] private FloatReference _shootingRange = new FloatReference (3f);
+
+    [SerializeField] private float distance;
 
     GameObject player;
 
@@ -27,13 +28,15 @@ public class EnemyBehavior : MonoBehaviour
 
         StateMachineRef.Machine.OnUpdate ((deltaTime, value) =>
         {
-            if (player != null)
-            {
-                var distance = Vector3.Distance (player.transform.position, transform.position);
+            distance = Vector3.Distance (player.transform.position, transform.position);
 
-                MoveTowardsPlayer ();
+            if (value == "CHASING")
+            {
+                if (player != null)
+                    MoveTowardsPlayer ();
+
             }
-            else
+            else if (value == "ATTACKING")
             {
 
             }

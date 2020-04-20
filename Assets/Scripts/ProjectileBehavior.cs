@@ -6,20 +6,16 @@ public class ProjectileBehavior : MonoBehaviour
 {
     Rigidbody rb;
     public float speed = 1;
-    [SerializeField] private UnityAtoms.BaseAtoms.StringConstant playerTag;
-
-    GameObject player;
     Vector3 moveHeading;
 
     void Start ()
     {
         TryGetComponent<Rigidbody> (out rb);
-        player = UnityAtoms.Tags.AtomTags.FindByTag (playerTag.Value);
     }
 
     private void Update ()
     {
-        moveHeading = (transform.position - player.transform.position).normalized;
+        moveHeading = (transform.position - Vector3.zero).normalized;
 
         transform.LookAt (moveHeading, transform.up);
 

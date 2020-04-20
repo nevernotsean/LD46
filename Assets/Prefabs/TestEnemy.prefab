@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 67e6506796a844c538ce4389fc91463d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -148,11 +148,11 @@ MonoBehaviour:
   playerTag: {fileID: 11400000, guid: 45cda71e5dec24f8ab7113f9687806f6, type: 2}
   _shootingRange:
     _usage: 0
-    _value: 1
+    _value: 10
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
-  speed: 10
+  speed: 5
 --- !u!143 &4379446128774897355
 CharacterController:
   m_ObjectHideFlags: 0

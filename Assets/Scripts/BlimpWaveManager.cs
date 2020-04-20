@@ -17,17 +17,16 @@ public class BlimpWaveManager : MonoBehaviour
   {
     while (true)
     {
-      if (_list.Count < limit.Value)
-        yield return new WaitForEndOfFrame ();
+      if (_list.Count <= limit.Value)
+      {
+        var randomCircle = Random.insideUnitCircle.normalized * radius;
 
-      var randomCircle = Random.insideUnitCircle.normalized * radius;
+        var randomPos = Vector3.one;
+        randomPos.x = randomPos.x + randomCircle.x;
+        randomPos.z = randomPos.z + randomCircle.y;
 
-      var randomPos = Vector3.one;
-      randomPos.x = randomPos.x + randomCircle.x;
-      randomPos.z = randomPos.z + randomCircle.y;
-
-      var instant = Instantiate (prefab, randomPos, Quaternion.identity, transform);
-
+        var instant = Instantiate (prefab, randomPos, Quaternion.identity, transform);
+      }
       yield return new WaitForSeconds (delay);
     }
   }
