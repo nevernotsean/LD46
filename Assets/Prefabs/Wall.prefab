@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2976243156043186493}
   - component: {fileID: 2976243156043186492}
   - component: {fileID: 2976243156043186495}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 2976243156224853245}
   - component: {fileID: 2976243156224853244}
   - component: {fileID: 2976243156224853247}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 2976243156583356549}
   - component: {fileID: 2976243156583356548}
   - component: {fileID: 2976243156583356551}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 2976243156725387980}
   - component: {fileID: 2976243156725387983}
   - component: {fileID: 2976243156725387982}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 6383342398530207416}
   - component: {fileID: -2357605587816943004}
   - component: {fileID: 3325687064223604908}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -510,7 +510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tags:
   - {fileID: 11400000, guid: 29a1f9765095a4abebbbd155fe596d56, type: 2}
-  - {fileID: 0}
 --- !u!114 &-2357605587816943004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,7 +571,7 @@ GameObject:
   - component: {fileID: 2976243157133468002}
   - component: {fileID: 2976243157133468013}
   - component: {fileID: 2976243157133468012}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

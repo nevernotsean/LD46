@@ -9,14 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf8a67b68db3d4650908f8cf6adeda60, type: 3}
-  m_Name: EnemyLimit
+  m_Script: {fileID: 11500000, guid: 75feba4dec8d44f0fb83f34e749e4dc3, type: 3}
+  m_Name: EnemyStateChanged
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _id: 
-  _value: 0
-  Changed: {fileID: 0}
-  ChangedWithHistory: {fileID: 0}
-  _oldValue: 0
-  _initialValue: 0
-  _preChangeTransformers: []
+  _replayBufferSize: 1
+  _inspectorRaiseValue: 
