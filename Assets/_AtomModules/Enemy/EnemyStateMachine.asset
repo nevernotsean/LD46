@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: EnemyStateMachine
-  _value: ATTACKING
+  _value: CHASING
   Changed: {fileID: 11400000, guid: 22c2031bed26b714a8c0a36e6089f9c6, type: 2}
   ChangedWithHistory: {fileID: 11400000, guid: 9d9ebb9229e1c1546bb0f4c60cd63133, type: 2}
-  _oldValue: ATTACKING
+  _oldValue: CHASING
   _initialValue: CHASING
   _preChangeTransformers: []
   _transitionStarted: {fileID: 11400000, guid: 781119f25e4ed2f46b270eec390f62d2, type: 2}
@@ -33,7 +33,7 @@ MonoBehaviour:
         _variableInstancer: {fileID: 0}
       _cooldown:
         _usage: 0
-        _value: 2
+        _value: 0
         _constant: {fileID: 0}
         _variable: {fileID: 0}
         _variableInstancer: {fileID: 0}
@@ -46,7 +46,7 @@ MonoBehaviour:
         _variableInstancer: {fileID: 0}
       _cooldown:
         _usage: 0
-        _value: 2
+        _value: 0
         _constant: {fileID: 0}
         _variable: {fileID: 0}
         _variableInstancer: {fileID: 0}

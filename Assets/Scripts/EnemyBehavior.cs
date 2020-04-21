@@ -42,6 +42,8 @@ public class EnemyBehavior : MonoBehaviour
             }
         }, gameObject);
 
+        StateMachineRef.Machine.OnStateCooldown ("ATTACKING", (state) => print ("FIRE"), gameObject);
+
         StateMachineRef.Machine.DispatchWhen (
             command: "ATTACK",
             (value) => player != null && value == "CHASING" && (_shootingRange.Value >= Vector3.Distance (player.transform.position, transform.position)),

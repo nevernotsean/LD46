@@ -148,10 +148,11 @@ MonoBehaviour:
   playerTag: {fileID: 11400000, guid: 45cda71e5dec24f8ab7113f9687806f6, type: 2}
   _shootingRange:
     _usage: 0
-    _value: 10
+    _value: 5
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+  distance: 0
   speed: 5
 --- !u!143 &4379446128774897355
 CharacterController:
